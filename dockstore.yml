@@ -1,0 +1,14 @@
+version: 1.2
+workflows:
+   - name: gs_analyze_C4AB_batch
+     subclass: WDL
+     publish: true
+     primaryDescriptorPath: wdl/gs_analyze_C4AB_batch.wdl
+     authors:
+       - name: "Bob Handsaker"
+   - name: gs_preprocess
+     subclass: WDL
+     publish: true
+     primaryDescriptorPath: wdl/gs_preprocess.wdl
+     authors:
+       - name: "Bob Handsaker"
