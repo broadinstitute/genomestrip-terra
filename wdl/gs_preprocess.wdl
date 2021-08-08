@@ -27,4 +27,9 @@ task preprocess {
 
 workflow gs_preprocessing_wf {
     call preprocess
+
+    meta {
+        author: "Bob Handsaker"
+        description: "Workflow for standard Genome STRiP preprocessing"
+    }
 }
